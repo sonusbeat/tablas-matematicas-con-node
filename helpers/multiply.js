@@ -1,27 +1,25 @@
 const fileSystem = require("fs");
 
-const createFileTable = async (base = 0) => {
+const createFileTable = async (base = 0, listar = false) => {
   try {
-    console.log('===================');
-    console.log(' '.repeat(4) + 'Tabla del', base);
-    console.log('===================');
-
     let output = '';
+    output += '===================\n';
+    output += `${' '.repeat(4)}Tabla del ${base}\n`;
+    output += '===================\n';
 
     for(let i = 1; i <= 10; i++) {
       output += `${base} x ${i} = ${base * i}\n`;
     }
 
-    console.log(output);
+    if(listar) console.log(output);
 
-    fileSystem.writeFileSync(`table-${base}.txt`, output);
+    fileSystem.writeFileSync(`tabla-del-${base}.txt`, output);
 
-    return `table-${base}.txt created successfully!`;
+    return `¡ tabla-del-${base}.txt ha sido creada correctamente !\n`;
   } catch(error) {
     throw error;
   }
 };
-
 
 module.exports = {
   createFileTable

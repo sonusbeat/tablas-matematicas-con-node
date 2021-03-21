@@ -1,6 +1,6 @@
 {
   "name": "03-bases-node",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Crear tablas matematicas",
   "main": "app.js",
   "scripts": {
