@@ -1,0 +1,22 @@
+{
+  "name": "03-bases-node",
+  "version": "0.0.1",
+  "description": "Crear tablas matematicas",
+  "main": "app.js",
+  "scripts": {
+    "base8": "node app --base=8",
+    "clear": "rm -f *.txt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "multiplicion",
+    "tablas",
+    "matematicas"
+  ],
+  "author": "Daniel Gonzalez Briseño",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0"
+  },
+  "devDependencies": {}
+}
