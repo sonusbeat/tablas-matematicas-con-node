@@ -21,7 +21,7 @@ const createFileTable = async (base = 0, listar = false, hasta = 10) => {
 
     if(listar) console.log(terminal);
 
-    fileSystem.writeFileSync(`tabla-del-${base}.txt`, output);
+    fileSystem.writeFileSync(`./output/tabla-del-${base}.txt`, output);
 
     return '!' + ` tabla-del-${base}.txt`.green + ` ha sido creada correctamente !\n`;
   } catch(error) {
