@@ -6,6 +6,6 @@ console.clear();
 
 // console.log(argv);
 
-createFileTable(argv.b, argv.l)
+createFileTable(argv.b, argv.l, argv.h)
   .then(msg => console.log(msg))
   .catch(error => console.log(error.red));
