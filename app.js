@@ -1,10 +1,13 @@
 const { createFileTable } = require("./helpers/multiply");
+const argv = require('yargs').argv;
 
 console.clear();
 
-const [, , arg3 = "base=5"] = process.argv;
-const [, base = 0] = arg3.split("=");
+console.log(process.argv);
+console.log(argv);
 
-createFileTable(base)
-  .then(msg => console.log(msg))
-  .catch(error => console.log(error));
+console.log("base: yargs", argv.base);
+
+// createFileTable(base)
+//   .then(msg => console.log(msg))
+//   .catch(error => console.log(error));
